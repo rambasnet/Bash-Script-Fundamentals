@@ -27,7 +27,7 @@ done
 # print line and total characters in each line for some input
 count=0
 for i in $(ls ~); do
-	count=$((count + 1))
+	((count ++))
 	echo "Line $count ($i) contains $(echo -n $i | wc -c) characters"
 done
 
@@ -35,11 +35,3 @@ done
 for i in "$@"; do
 	echo $i
 done
-
-for ((count=10; count>0; count=count-1)); do
-	clear
-	echo $count
-	sleep 1
-done
-clear
-echo "blast off!"

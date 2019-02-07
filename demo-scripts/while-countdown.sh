@@ -2,13 +2,13 @@
 
 #set -x
 #set trace on for the block of code
-count=10
 # use [[ exp ]] for bash exp that has some output
 # use (( exp )) for pure numeric epression
 # [ ] works in most shell types
 #while [[ count -gt 0 ]]; do
 #while (( count > 0 )); do
 
+count=10
 while [[ $count > 0 ]]; do
 	clear
 	echo $count
