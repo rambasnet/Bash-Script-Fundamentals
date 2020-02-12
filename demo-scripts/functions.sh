@@ -9,20 +9,27 @@
 #   body
 #   return 
 # }
-name="John"
+name="Michael"
 sayHello() {
     local name="Jake"
+    # check for # of arguments
+    if [[ $# >= 1]]; then
+        echo "total arguments = $#"
+    fi
+    # check if first argument exists
     if [[ -n $1 ]]; then
         echo "Hello there, $1!"
     else
-        echo "Hello there!"
+        echo "Hello there, $name"
     fi
-    echo $name
     return
-    #exit 1
+    #exit 1 #exit the program/script completely
 }
 
-sayHello "James"
+sayHello "Sally"
 # call function without passing arguments
-var=$(sayHello)
-echo "var=" $var
+sayHello
+
+# use the echo value as a return value
+ans=$(sayHello) 
+echo "return value =" $ans

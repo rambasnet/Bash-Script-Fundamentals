@@ -18,5 +18,8 @@ while [[ $count > 0 ]]; do
 	(( count-- ))
 done
 echo "blast off!"
+clear
+echo 'asdfdsaf;^@$^@$#%$#%'
+
 #set +x
 #set trace off

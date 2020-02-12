@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 # -x turn trace on for whole file
 # Input/Output
 echo "Some stuff"
@@ -12,7 +12,7 @@ printf "%s %d %d\n" "some text" 1 2
 
 # prompt user to enter data
 echo -n "Enter a number: "
-read num
+read numq
 printf "you entered %d\n" $num
 
 # Shortcut
