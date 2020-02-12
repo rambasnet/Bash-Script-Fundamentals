@@ -13,8 +13,8 @@ name="Michael"
 sayHello() {
     local name="Jake"
     # check for # of arguments
-    if [[ $# >= 1]]; then
-        echo "total arguments = $#"
+    if (( $# >= 1 )); then
+        echo "more than one argument provided: total arguments = $#"
     fi
     # check if first argument exists
     if [[ -n $1 ]]; then
