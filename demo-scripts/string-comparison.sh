@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p "Enter your answer =>" ANS
+read -p "Enter your answer [yes|no]: " ANS
 if [[ -z $ANS ]]; then
 	echo "No answer provided"
 elif [[ $ANS == "yes" ]]; then
