@@ -1,6 +1,7 @@
 #!/bin/bash
 # -x turn trace on for whole file
 # Input/Output
+
 echo "Some stuff"
 #printf "format" <format> <space separated arguments>
 # %x - hex
@@ -13,11 +14,11 @@ printf "%s %d %d\n" "some text" 1 2
 # prompt user to enter data
 echo -n "Enter a number: "
 read numq
-printf "you entered %d\n" $num
+printf "you entered %d\n" $numq
 
 # Shortcut
 read -p "Enter a number: " N
-printf "N%%2 = %d\n" $((N%2))
+printf "$N%%2 = %d\n" $((N%2))
 
 read -p "Enter your full name: " name
 echo "Hello " $name
