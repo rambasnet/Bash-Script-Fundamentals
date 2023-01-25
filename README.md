@@ -16,3 +16,6 @@ Jupyter Notebooks for Learning Linux Bash Script Fundamentals
 -   Using a terminal cd into the repo folder and run
     - `jupyter notebook`
 
+## Example of bash script
+- https://github.com/rambasnet/gitassignments
+- I use the script the clone and pull students GitHub repositories for grading in my classes
